@@ -44,13 +44,16 @@ Thank you to [Brian Mubia](https://github.com/owlzyseyes) for curating this week
 This week we will be working with a new and exiting dataset, the goal is to not answer the questions in the challenge, but to create our own question and also create a compelling visualisation. The main goal is for me to keep improving at story telling. I also want to refine project structure and work on the improving my workflow in python by creating templates so i have to spend less time on organisational side of things and focus on working with the data. 
 
 ## Step 1. Loading
+Load both datasets provided in the challenge.
+
 ## Step 2. Exploring
 After looking through data we have identified missing values, which columns pose greater value for the analysis. And generally how the data looks from it descriptive, distribution perspective etc. We quickly identified correlation between caloric content, and negative correlation between caloric content and servings
 
-![Correlation Heatmap: Allrecipes](img\screenshots\all_recipes_correlation_matrix.png "Correlation Matrix")  
+![Correlation Heatmap: Allrecipes](img/screenshots/all_recipes_correlation_matrix.png "Correlation Matrix")  
 
 ![Missing Values: Allrecipes](img\screenshots\all_recipes_missing_values.png "Missing Values")  
 
 ## Step 3. Cleaning
+After identifying solvable issues i removed missing records from critical columns like calories, fat, carbs, protein. When dealing with avg_rating, total_ratings, and review rather than removing missing rows, replaced values with 0 as most likely recipe has not been rated. Fixed incorrect dtype for date_published column. 
 
 ## Dashboard Creation
